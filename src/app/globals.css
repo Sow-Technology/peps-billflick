@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 281 64% 2%;
+    --muted: 41 19% 87%;
+    --muted-foreground: 41 15% 32%;
+    --popover: 281 44% 98%;
+    --popover-foreground: 281 64% 2%;
+    --card: 0 0% 100%;
+    --card-foreground: 281 64% 1%;
+    --border: 281 11% 92%;
+    --input: 281 11% 92%;
+    --primary: 221.21, 83.19%, 53.33%;
+    --primary-foreground: 281 94% 98%;
+    --secondary: 41 94% 38%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 161 94% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 19 86% 29%;
+    --destructive-foreground: 19 86% 89%;
+    --ring: 281 94% 38%;
+    --radius: 0.5rem;
+    
+    --chart-1: 281 94% 38%;  /* Primary Color */
+    --chart-2: 161 94% 38%;  /* Accent Color */
+    --chart-3: 41 94% 38%;   /* Secondary Color */
+    --chart-4: 19 86% 29%;   /* Destructive Color */
+    --chart-5: 200 94% 38%;  /* Additional Complementary Color */
+  }
+
+  .dark {
+    --background: 281 31% 2%;
+    --foreground: 281 39% 100%;
+    --muted: 41 19% 13%;
+    --muted-foreground: 41 15% 68%;
+    --popover: 281 31% 2%;
+    --popover-foreground: 281 39% 100%;
+    --card: 281 31% 3%;
+    --card-foreground: 0 0% 100%;
+    --border: 281 11% 14%;
+    --input: 281 11% 14%;
+    --primary: 281 94% 38%;
+    --primary-foreground: 281 94% 98%;
+    --secondary: 41 94% 38%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 161 94% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 19 86% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 281 94% 38%;
+
+    --chart-1: 281 94% 38%;  /* Primary Color */
+    --chart-2: 161 94% 38%;  /* Accent Color */
+    --chart-3: 41 94% 38%;   /* Secondary Color */
+    --chart-4: 19 86% 29%;   /* Destructive Color */
+    --chart-5: 200 94% 38%;  /* Additional Complementary Color */
+  }
+}
+
+.no-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+body,.custom-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: 4px;
+  scrollbar-color: blue;
+scrollbar-track-color: blue;
+
+}
+
+body::-webkit-scrollbar,.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  scrollbar-color: blue;
+scrollbar-track-color: blue;
+scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--inter), sans-serif;
+}
+.spice{
+  font-family: var(--spice-rice), sans-serif;
+}
+@media print {
+
+  body {
+    font-family: var(--inter), sans-serif;
+  }
+}
